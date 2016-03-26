@@ -73,6 +73,11 @@ Linux: [![Circle CI](https://circleci.com/gh/conda-forge/g2clib-feedstock.svg?st
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/g2clib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/g2clib-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/g2clib-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/g2clib-feedstock/branch/master)
 
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/g2clib/badges/version.svg)](https://anaconda.org/conda-forge/g2clib)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/g2clib/badges/downloads.svg)](https://anaconda.org/conda-forge/g2clib)
+
 
 Updating g2clib-feedstock
 =========================
