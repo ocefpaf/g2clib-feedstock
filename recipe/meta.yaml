@@ -17,11 +17,13 @@ requirements:
         - zlib
         - jpeg
         - jasper
-        - gcc
+    run:
+        - libgcc
 
 test:
     commands:
         - exit $(test -f ${PREFIX}/lib/libgrib2c.a)  # [not win]
+        - conda inspect linkages -n _test g2clib  # [linux]
 
 about:
     home: http://www.nco.ncep.noaa.gov/pmb/codes/GRIB2/
