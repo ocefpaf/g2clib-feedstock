@@ -8,7 +8,7 @@ source:
     md5: f857f49a66918316996eb52399e04120
 
 build:
-    number: 1
+    number: 2
     skip: True  # [win]
 
 requirements:
@@ -17,12 +17,10 @@ requirements:
         - zlib
         - jpeg
         - jasper
-    run:
-        - libgcc
 
 test:
     commands:
-        - exit $(test -f ${PREFIX}/lib/libgrib2c.a)  # [not win]
+        - test -f ${PREFIX}/lib/libgrib2c.a  # [unix]
         - conda inspect linkages -n _test g2clib  # [linux]
 
 about:
