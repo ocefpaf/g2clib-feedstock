@@ -7,9 +7,7 @@ else
     DEFS='-DUSE_PNG -DUSE_JPEG2000';
 fi
 
-export DEFS
-CFLAGS="$CFLAGS $DEFS -fPIC -I${PREFIX}/include"
-export CFLAGS
+export CFLAGS="$CFLAGS $DEFS -fPIC -I${PREFIX}/include"
 
 make -e
 cp *.h ${PREFIX}/include

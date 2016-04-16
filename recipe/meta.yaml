@@ -8,14 +8,14 @@ source:
     md5: f857f49a66918316996eb52399e04120
 
 build:
-    number: 2
+    number: 3
     skip: True  # [win]
 
 requirements:
     build:
         - libpng
         - zlib
-        - jpeg
+        - jpeg 9b
         - jasper
 
 test:
