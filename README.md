@@ -5,7 +5,7 @@ Home: http://www.nco.ncep.noaa.gov/pmb/codes/GRIB2/
 
 Package license: BSD
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: C decoder/encoder routines for GRIB edition 2.
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/g2clib-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/g2clib-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/g2clib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/g2clib-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/g2clib-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/g2clib-feedstock/branch/master)
