@@ -1,32 +1,38 @@
+{% set version = "1.6.0" %}
+
 package:
     name: g2clib
-    version: 1.5.0
+    version: {{ version }}
 
 source:
-    fn: g2clib-1.5.0-patch.tar.gz
-    url: http://www.ncl.ucar.edu/Download/files/g2clib-1.5.0-patch.tar.gz
-    md5: f857f49a66918316996eb52399e04120
+    fn: g2clib-{{ version }}.tar
+    url: http://www.nco.ncep.noaa.gov/pmb/codes/GRIB2/g2clib-{{ version }}.tar
+    sha256: afec1ea29979b84369d0f46f305ed12f73f1450ec2db737664ec7f75c1163add
 
 build:
-    number: 5
+    number: 0
     skip: True  # [win]
 
 requirements:
     build:
         - libpng >=1.6.21,<1.7
         - zlib 1.2.*
-        - jpeg 9*
+        - jasper
+    run:
+        - libpng >=1.6.21,<1.7
+        - zlib 1.2.*
         - jasper
 
 test:
     commands:
-        - test -f ${PREFIX}/lib/libgrib2c.a  # [unix]
-        - conda inspect linkages -n _test g2clib  # [linux]
+        - test -f ${PREFIX}/lib/libg2c_v1.6.0.a  # [unix]
+        - conda inspect linkages -n _test g2clib  # [not win]
+        - conda inspect objects -n _test g2clib  # [osx]
 
 about:
     home: http://www.nco.ncep.noaa.gov/pmb/codes/GRIB2/
-    license: BSD
-    summary: C decoder/encoder routines for GRIB edition 2.
+    license: Public Domain
+    summary: 'C decoder/encoder routines for GRIB edition 2.'
 
 extra:
     recipe-maintainers:
