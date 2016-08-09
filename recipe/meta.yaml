@@ -10,7 +10,7 @@ source:
     sha256: afec1ea29979b84369d0f46f305ed12f73f1450ec2db737664ec7f75c1163add
 
 build:
-    number: 0
+    number: 1
     skip: True  # [win]
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
 
 test:
     commands:
-        - test -f ${PREFIX}/lib/libg2c_v1.6.0.a  # [unix]
+        - test -f ${PREFIX}/lib/libgrib2c.a  # [unix]
         - conda inspect linkages -n _test g2clib  # [not win]
         - conda inspect objects -n _test g2clib  # [osx]
 
