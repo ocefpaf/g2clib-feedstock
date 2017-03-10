@@ -11,6 +11,18 @@ Summary: C decoder/encoder routines for GRIB edition 2.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/g2clib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/g2clib-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/g2clib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/g2clib-feedstock)
+Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/g2clib/badges/version.svg)](https://anaconda.org/conda-forge/g2clib)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/g2clib/badges/downloads.svg)](https://anaconda.org/conda-forge/g2clib)
+
 Installing g2clib
 =================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `g2clib` available on your platfor
 ```
 conda search g2clib --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/g2clib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/g2clib-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/g2clib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/g2clib-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/g2clib/badges/version.svg)](https://anaconda.org/conda-forge/g2clib)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/g2clib/badges/downloads.svg)](https://anaconda.org/conda-forge/g2clib)
 
 
 Updating g2clib-feedstock
