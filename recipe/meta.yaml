@@ -10,24 +10,24 @@ source:
   sha256: afec1ea29979b84369d0f46f305ed12f73f1450ec2db737664ec7f75c1163add
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win]
 
 requirements:
   build:
-    - libpng >=1.6.23,<1.7
+    - libpng >=1.6.28,<1.7
     - zlib 1.2.*
     - jasper
   run:
-    - libpng >=1.6.23,<1.7
+    - libpng >=1.6.28,<1.7
     - zlib 1.2.*
     - jasper
 
 test:
   commands:
     - test -f ${PREFIX}/lib/libgrib2c.a  # [unix]
-    #- conda inspect linkages -p $PREFIX g2clib  # [not win]
-    #- conda inspect objects -p $PREFIX g2clib  # [osx]
+    - conda inspect linkages -p $PREFIX g2clib  # [not win]
+    - conda inspect objects -p $PREFIX g2clib  # [osx]
 
 about:
   home: http://www.nco.ncep.noaa.gov/pmb/codes/GRIB2/
