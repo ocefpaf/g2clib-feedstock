@@ -9,16 +9,16 @@ source:
   sha256: afec1ea29979b84369d0f46f305ed12f73f1450ec2db737664ec7f75c1163add
 
 build:
-  number: 4
+  number: 5
   skip: True  # [win]
 
 requirements:
   build:
-    - libpng >=1.6.22,<1.6.31
+    - libpng >=1.6.32,<1.6.35
     - zlib 1.2.11
     - jasper
   run:
-    - libpng >=1.6.22,<1.6.31
+    - libpng >=1.6.32,<1.6.35
     - zlib 1.2.11
     - jasper
 
