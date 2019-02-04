@@ -14,12 +14,14 @@ build:
 
 requirements:
   build:
-    - libpng >=1.6.32,<1.6.35
-    - zlib 1.2.11
+    - {{ compiler('c') }}
+  host:
+    - libpng
+    - zlib
     - jasper
   run:
-    - libpng >=1.6.32,<1.6.35
-    - zlib 1.2.11
+    - libpng
+    - zlib
     - jasper
 
 test:
